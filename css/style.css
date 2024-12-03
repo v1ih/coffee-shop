@@ -1,0 +1,230 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #6f4f37; /* Cor de café */
+    color: white;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+}
+
+header .logo img {
+    width: 120px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav ul li {
+    font-size: 1.1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #b28b6e; /* Tom mais claro de café */
+}
+
+header nav ul li a.active {
+    background-color: #b28b6e; /* Tom mais claro de café */
+}
+
+/* Estilos do conteúdo principal */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Introdução da página inicial */
+.intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    color: #6f4f37;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.intro .btn {
+    background-color: #6f4f37;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.intro .btn:hover {
+    background-color: #b28b6e;
+}
+
+/* Seção de Promoções */
+.promocao {
+    background-color: #fff8e1;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.promocao h2 {
+    color: #6f4f37;
+}
+
+.promocao p {
+    font-size: 1.2rem;
+    color: #6f4f37;
+}
+
+/* Estilo de cardápio */
+.produtos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.produto {
+    background-color: #fff;
+    text-align: center;
+    width: 30%;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.produto h3 {
+    font-size: 1.5rem;
+    color: #6f4f37;
+    margin-bottom: 0.5rem;
+}
+
+.produto p {
+    font-size: 1.2rem;
+    color: #b28b6e;
+}
+
+/* Estilo do formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    font-size: 1.1rem;
+    color: #6f4f37;
+}
+
+form input, form textarea {
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #6f4f37;
+    outline: none;
+}
+
+form button {
+    background-color: #6f4f37;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #b28b6e;
+}
+
+/* Estilo de rodapé */
+footer {
+    background-color: #6f4f37;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .produtos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produto {
+        width: 80%;
+    }
+
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+}
